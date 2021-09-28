@@ -1,6 +1,6 @@
 'use strict'
 
-var appLibrary = angular.module('appLibrary', ['ngRoute']);
+var appLibrary = angular.module('librosAPI', ['ngRoute']);
 
 appLibrary.controller('mainCtrl', ['$scope', function ($scope) {
 
