@@ -23,14 +23,16 @@ body{
     grid-area: header;
     background-color: darkslategray; 
     display: flex;
-    float: left;
+    justify-content: space-between;
     align-items: center;
  }
 
  .nav {
     grid-area: nav;
     background-color: rgb(15, 50, 80); 
-    /* display: flex; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
  }
 
  .main {
@@ -54,86 +56,50 @@ body{
          200px  auto;
  }
 
-.left{
-    margin: 10px;
+.logo{
     display: flex;
     align-items: center;   
 }
 
-.right{
-    margin: 10px auto;
+.form{
     display: flex;
-    float: right;    
-}
 
-.form {
-    font-size: 14pt;
-    /* display: flex;  */
+}
+.buscar {
+    width: 50rem;
+    height: 1rem;
+    border: none;
+    padding: 1.9rem;
+    border-radius: .5rem;
 }
 
 .btn {
-    background-color: #4CAF50;
-    margin-left: 10px;
-    margin-top: 10px;
+    background-color: rgb(15, 50, 80); 
     color: white;
-    width: 180px;
-    height: 30px;
+    width: 200px;
+    height: auto;
     font-size: 12pt;
+    padding: 1rem;
+
+}
+.btn:hover{
+    background-color: rgb(192, 7, 7); 
 }
 
 .btn-form {
-    background-color: #4CAF50;
-    margin-top: 3px;
+    background-color: #4CAF50;    
     color: white;
-}
-
-.text-lib{
-    color: white;
-}
-
-/* cards */
-.row{
-    display: flex;
-    gap: 10px;
-}
-
-.columns{
-    display: flex;
-    gap: 10px;
-}
-
-.container {
-    position: relative;
-    width: 100%;
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 0 20px;
-    box-sizing: border-box; 
-}
-.card {
-    text-align: center;
-    border: 1px solid #e1e1e1;
-    background: white;
-    max-width: 271px;
-    align-items: center;
-    margin-bottom: 10px;
-    /* text-align: left; */
-}
-
-.info-card  {
-    padding: 10px 20px;
-}
-
-.card h4 {
-    margin-bottom: 5px;
-}
-.info-card .precio {
-    text-decoration: line-through;
-    font-size: 18px;
-    margin-top: 10px;
-}
-.info-card .precio span {
+    padding: 1rem;
     font-weight: 700;
-    font-size: 22px;
+    font-size: 1.5rem;
+    border-radius: .5rem;
 }
-/* cards */
+
+.lbl-nombre{
+    display: flex;
+    align-items: center;
+    font-size: 2.5rem;    
+    color: white;
+    margin-right:1rem;
+}
+
